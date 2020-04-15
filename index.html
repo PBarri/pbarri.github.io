@@ -415,7 +415,7 @@
                     <div class="flip-card-inner">
                       <div class="flip-card-front img-raised">
                         <figure class="cc-effect"><img src="images/sourceeye.jpg" alt="Image" />
-                          <figcaption>
+                          <figcaption class="align-items-center d-flex flex-column justify-content-center">
                             <div class="h4">Source Eye</div>
                             <p>Escáner Vulnerabilidades</p>
                           </figcaption>
@@ -451,7 +451,7 @@
                     <div class="flip-card-inner">
                       <div class="flip-card-front img-raised">
                         <figure class="cc-effect"><img src="images/gpe.jpg" alt="Image" />
-                          <figcaption>
+                          <figcaption class="align-items-center d-flex flex-column justify-content-center">
                             <div class="h4">Gestor de Proyectos y Equipos</div>
                             <p>Gestión de Proyectos</p>
                           </figcaption>
@@ -479,7 +479,7 @@
                     <div class="flip-card-inner">
                       <div class="flip-card-front img-raised">
                         <figure class="cc-effect"><img src="images/clubdeportivo.jpg" alt="Image" />
-                          <figcaption>
+                          <figcaption class="align-items-center d-flex flex-column justify-content-center">
                             <div class="h4">Proyecto Club Deportivo</div>
                             <p>Gestión Instalaciones</p>
                           </figcaption>
@@ -509,7 +509,7 @@
                     <div class="flip-card-inner">
                       <div class="flip-card-front img-raised">
                         <figure class="cc-effect"><img src="images/betme.jpg" alt="Image" />
-                          <figcaption>
+                          <figcaption class="align-items-center d-flex flex-column justify-content-center">
                             <div class="h4">Bet Me</div>
                             <p>Apuestas Deportivas</p>
                           </figcaption>
@@ -544,7 +544,7 @@
                     <div class="flip-card-inner">
                       <div class="flip-card-front img-raised">
                         <figure class="cc-effect"><img src="images/antispam.jpg" alt="Image" />
-                          <figcaption>
+                          <figcaption class="align-items-center d-flex flex-column justify-content-center">
                             <div class="h4">Filtro Anti-SPAM</div>
                             <p>Inteligencia Artificial</p>
                           </figcaption>
@@ -746,6 +746,11 @@
       $(".flip-card").click(function() {
         $(this).toggleClass("flip-hover");
       });
+      // Check for iOS devices to overcome :hover issues
+      let isIOS = /iPad|iPhone|iPod/.test(navigator.platform) || /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+      if (isIOS) {
+        $(".cc-effect").removeClass("cc-effect").addClass("cc-effect-ios");
+      }
     });
 
   </script>

@@ -6930,13 +6930,16 @@ Created using IcoMoon - icomoon.io
 }
 
 .gallery figure.cc-effect figcaption::before,
-.gallery figure.cc-effect figcaption::after {
+.gallery figure.cc-effect figcaption::after,
+.gallery figure.cc-effect-ios figcaption::before,
+.gallery figure.cc-effect-ios figcaption::after {
   position: absolute;
   content: '';
   opacity: 0;
 }
 
-.gallery figure.cc-effect figcaption::before {
+.gallery figure.cc-effect figcaption::before,
+.gallery figure.cc-effect-ios figcaption::before {
   top: 10px;
   right: 10px;
   bottom: 10px;
@@ -6947,7 +6950,8 @@ Created using IcoMoon - icomoon.io
   transform-origin: 0 0;
 }
 
-.gallery figure.cc-effect figcaption::after {
+.gallery figure.cc-effect figcaption::after,
+.gallery figure.cc-effect-ios figcaption::after {
   top: 10px;
   right: 10px;
   bottom: 10px;
@@ -6958,8 +6962,8 @@ Created using IcoMoon - icomoon.io
   transform-origin: 100% 0;
 }
 
-.gallery figure.cc-effect .h4 {
-  margin-top: 25%;
+.gallery figure.cc-effect .h4,
+.gallery figure.cc-effect-ios .h4 {
   -webkit-transition: -webkit-transform 0.35s;
   transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
@@ -6968,7 +6972,8 @@ Created using IcoMoon - icomoon.io
 }
 
 @media (max-width: 480px) {
-  .gallery figure.cc-effect .h4 {
+  .gallery figure.cc-effect .h4,
+  .gallery figure.cc-effect-ios .h4 {
     font-size: 14px;
   }
 }
@@ -6980,7 +6985,9 @@ Created using IcoMoon - icomoon.io
 }
 
 .gallery figure.cc-effect p,
-.gallery figure.cc-effect button {
+.gallery figure.cc-effect button,
+.gallery figure.cc-effect-ios p,
+.gallery figure.cc-effect-ios button {
   padding: 0.5em 2em;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -6992,7 +6999,9 @@ Created using IcoMoon - icomoon.io
 }
 
 .gallery figure.cc-effect img,
-.gallery figure.cc-effect .h4 {
+.gallery figure.cc-effect .h4,
+.gallery figure.cc-effect-ios img,
+.gallery figure.cc-effect-ios .h4 {
   -webkit-transform: scale(1.06, 1.06);
   transform: scale(1.06, 1.06);
 }
@@ -7000,33 +7009,43 @@ Created using IcoMoon - icomoon.io
 .gallery figure.cc-effect img,
 .gallery figure.cc-effect figcaption::before,
 .gallery figure.cc-effect figcaption::after,
-.gallery figure.cc-effect p {
+.gallery figure.cc-effect p,
+.gallery figure.cc-effect-ios img,
+.gallery figure.cc-effect-ios figcaption::before,
+.gallery figure.cc-effect-ios figcaption::after,
+.gallery figure.cc-effect-ios p {
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
 }
 
-.gallery figure.cc-effect:hover img {
+.gallery figure.cc-effect:hover img, .gallery figure.cc-effect-ios img {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
 .gallery figure.cc-effect:hover figcaption::before,
-.gallery figure.cc-effect:hover figcaption::after {
+.gallery figure.cc-effect:hover figcaption::after,
+.gallery figure.cc-effect-ios figcaption::before,
+.gallery figure.cc-effect-ios figcaption::after {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
 }
 
-.gallery figure.cc-effect:hover figcaption:before {
+.gallery figure.cc-effect:hover figcaption:before,
+.gallery figure.cc-effect-ios figcaption:before {
   background: rgba(27, 23, 23, 0.5);
 }
 
 .gallery figure.cc-effect:hover .h4,
 .gallery figure.cc-effect:hover p,
-.gallery figure.cc-effect:hover button {
+.gallery figure.cc-effect:hover button,
+.gallery figure.cc-effect-ios .h4,
+.gallery figure.cc-effect-ios p,
+.gallery figure.cc-effect-ios button {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -7036,13 +7055,17 @@ Created using IcoMoon - icomoon.io
 .gallery figure.cc-effect:hover figcaption::after,
 .gallery figure.cc-effect:hover .h4,
 .gallery figure.cc-effect:hover p,
-.gallery figure.cc-effect:hover img {
+.gallery figure.cc-effect:hover img,
+.gallery figure.cc-effect-ios figcaption::after,
+.gallery figure.cc-effect-ios .h4,
+.gallery figure.cc-effect-ios p,
+.gallery figure.cc-effect-ios img {
   -webkit-transition-delay: 0.15s;
   transition-delay: 0.15s;
 }
 
 /* Header */
-/* Navbar style*/
+/* Navbar style25%
 .navbar {
   font-size: 18px;
   letter-spacing: 1px;
