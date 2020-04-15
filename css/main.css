@@ -4629,7 +4629,9 @@ Created using IcoMoon - icomoon.io
 }
 
 .card .card-body {
-  min-height: 190px;
+  min-height: -moz-min-content;
+  min-height: -webkit-min-content;
+  min-height: min-content;
 }
 
 .card[data-background-color="orange"] {
@@ -7429,10 +7431,11 @@ a.credit {
 
 .flip-card .card {
   height: 100%;
+  overflow-y: auto;
 }
 
 .card-content {
-  overflow: scroll;
+  overflow-y: auto;
 }
 
 body {
