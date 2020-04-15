@@ -1316,8 +1316,8 @@
 .navbar .navbar-nav > a.btn {
   border-width: 2px;
   font-weight: 400;
-  font-size: 0.8571em;
-  line-height: 1.35em;
+  font-size: 0.8571rem;
+  line-height: 1.35rem;
   margin: 5px 1px;
   border: none;
   border-radius: 0.1875rem;
@@ -7429,6 +7429,10 @@ a.credit {
 
 .flip-card .card {
   height: 100%;
+}
+
+.card-content {
+  overflow: scroll;
 }
 
 body {
