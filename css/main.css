@@ -7438,6 +7438,6 @@ a.credit {
   overflow-y: auto;
 }
 
-body {
+body, .page-content {
   background: #F5F7F3;
 }
