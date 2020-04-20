@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es-ES">
+<html lang="en">
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -12,7 +12,6 @@
     }
     gtag('js', new Date());
     gtag('config', 'UA-163697237-1');
-
   </script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,6 +25,8 @@
   <link href="css/main.css" rel="stylesheet">
 </head>
 
+<!--include-html="fragments/cv-es.html"-->
+
 <body id="top">
   <header>
     <div class="profile-page sidebar-collapse">
@@ -33,17 +34,23 @@
         <div class="container">
           <div class="navbar-translate">
             <a class="navbar-brand" href="#">
-              <img src="images/perfil.jpg" width="30" height="30" class="d-inline-block align-top rounded-circle" alt=""> Pablo Barrientos </a>
-            <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span
-                class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
+              <img src="images/perfil.jpg" width="30" height="30" class="d-inline-block align-top rounded-circle" alt=""> Pablo Barrientos
+            </a>
+            <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
+          </div>
+          <div class="collapse navbar-collapse justify-content-start">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link locale-switcher" href="#" data-locale="en">EN</a></li>
+              <li class="nav-item"><a class="nav-link locale-switcher" href="#" data-locale="es">ES</a></li>
+            </ul>
           </div>
           <div class="collapse navbar-collapse justify-content-end" id="navigation">
             <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#about">Sobre mí</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill">Habilidades</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience">Experiencia</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#projects">Proyectos</a></li>
-              <li class="nav-item"><a class="nav-link smooth-scroll" href="#education">Formación</a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#about"><span data-i18n="about_me">About me</span></a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#skill"><span data-i18n="skills">Skills</span></a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#experience"><span data-i18n="experience">Experience</span></a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#projects"><span data-i18n="projects">Projects</span></a></li>
+              <li class="nav-item"><a class="nav-link smooth-scroll" href="#education"><span data-i18n="education">Education</span></a></li>
             </ul>
           </div>
         </div>
@@ -56,9 +63,11 @@
         <div class="page-header-image" data-parallax="true" style="background-image: url('images/cc-bg-1.jpg');"></div>
         <div class="container">
           <div class="content-center">
-            <div class="cc-profile-image"><a href="#"><img src="images/perfil.jpg" alt="Image" /></a></div>
+            <div class="cc-profile-image">
+              <a href="#"><img src="images/perfil.jpg" alt="Image" /></a>
+            </div>
             <div class="h2 title">Pablo Barrientos</div>
-            <p class="category text-white">Ingeniero en Informática, Máster en Ciberseguridad</p><a class="btn disabled btn-info bg-yellow-dark" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Descargar CV</a>
+            <p class="category text-white" data-i18n="cv_title">Ingeniero en Informática, Máster en Ciberseguridad</p><a class="btn disabled btn-info bg-yellow-dark" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor"><span data-i18n="download_cv">Download CV</span></a>
           </div>
         </div>
         <div class="section">
@@ -86,17 +95,17 @@
           <div class="row">
             <div class="col-lg-6 col-md-12">
               <div class="card-body">
-                <div class="h4 mt-0 title">Acerca de mí</div>
-                <p>¡Hola! Soy Pablo Barrientos, un profesional con más de 6 años de experiencia en el sector energético y de gas, así como en el sector financiero y en investigación en ciberseguridad.</p>
-                <p>Durante estos años, he trabajado en varios proyectos con diferentes metodologías, arquitecturas, tecnologías y compañeros, estando acostumbrado a trabajar bajo presión.</p>
-                <p>Me considero una persona proactiva, trabajadora, sociable, capaz de trabajar en equipo y apasionado en aprender nuevas tecnologías.</p>
+                <div class="h4 mt-0 title"><span data-i18n="about_me_desc">About me</span></div>
+                <p data-i18n="about_me_1"></p>
+                <p data-i18n="about_me_2"></p>
+                <p data-i18n="about_me_3"></p>
               </div>
             </div>
             <div class="col-lg-6 col-md-12">
               <div class="card-body">
-                <div class="h4 mt-0 title">Información Básica</div>
+                <div class="h4 mt-0 title"><span data-i18n="basic_information">Basic Information</span></div>
                 <div class="row">
-                  <div class="col-sm-4"><strong class="text-uppercase">Edad:</strong></div>
+                  <div class="col-sm-4"><strong class="text-uppercase" data-i18n="age">Age:</strong></div>
                   <div class="col-sm-8">30</div>
                 </div>
                 <div class="row mt-3">
@@ -104,9 +113,9 @@
                   <div class="col-sm-8">pablo.barrientoslobato@gmail.com</div>
                 </div>
                 <div class="row mt-3">
-                  <div class="col-sm-4"><strong class="text-uppercase">Idiomas:</strong></div>
-                  <div class="col-sm-8">Español</div>
-                  <div class="col-sm-8 offset-sm-4">Inglés</div>
+                  <div class="col-sm-4"><strong class="text-uppercase" data-i18n="languages">Languages:</strong></div>
+                  <div class="col-sm-8"><span data-i18n="lang_es">Spanish</span></div>
+                  <div class="col-sm-8 offset-sm-4"><span data-i18n="lang_en">English</span></div>
                 </div>
               </div>
             </div>
@@ -114,12 +123,12 @@
         </div>
       </div>
       <div class="section" id="skill">
-        <div class="h4 text-center mb-4 title">Habilidades profesionales</div>
+        <div class="h4 text-center mb-4 title"><span data-i18n="skills_desc">Professional skills</span></div>
         <div class="accordion d-lg-none" data-aos="fade-up" data-aos-anchor-placement="top-bottom" id="skills-accordion">
           <div class="card">
             <div class="card-header" id="collapse-security-heading">
               <h3 class="mb-0">
-                <button class="btn btn-link btn-accordion" type="button" data-toggle="collapse" data-target="#collapse-security" aria-expanded="true" aria-controls="collapse-security"> Seguridad </button>
+                <button class="btn btn-link btn-accordion" type="button" data-toggle="collapse" data-target="#collapse-security" aria-expanded="true" aria-controls="collapse-security" data-i18n="security"> Security </button>
               </h3>
             </div>
             <div id="collapse-security" class="collapse show" aria-labelledby="collapse-security-heading" data-parent="#skills-accordion">
@@ -131,7 +140,7 @@
           <div class="card">
             <div class="card-header" id="collapse-pl-heading">
               <h3 class="mb-0">
-                <button class="btn btn-link btn-accordion" type="button" data-toggle="collapse" data-target="#collapse-pl" aria-expanded="false" aria-controls="collapse-pl"> Lenguajes de programación </button>
+                <button class="btn btn-link btn-accordion" type="button" data-toggle="collapse" data-target="#collapse-pl" aria-expanded="false" aria-controls="collapse-pl" data-i18n="pl"> Programming Languages </button>
               </h3>
             </div>
             <div id="collapse-pl" class="collapse" aria-labelledby="collapse-pl-heading" data-parent="#skills-accordion">
@@ -143,7 +152,7 @@
           <div class="card">
             <div class="card-header" id="collapse-backend-heading">
               <h3 class="mb-0">
-                <button class="btn btn-link btn-accordion" type="button" data-toggle="collapse" data-target="#collapse-backend" aria-expanded="false" aria-controls="collapse-backend"> Back-End </button>
+                <button class="btn btn-link btn-accordion" type="button" data-toggle="collapse" data-target="#collapse-backend" aria-expanded="false" aria-controls="collapse-backend" data-i18n="backend"> Back-End </button>
               </h3>
             </div>
             <div id="collapse-backend" class="collapse" aria-labelledby="collapse-backend-heading" data-parent="#skills-accordion">
@@ -155,7 +164,7 @@
           <div class="card">
             <div class="card-header" id="collapse-frontend-heading">
               <h3 class="mb-0">
-                <button class="btn btn-link btn-accordion" type="button" data-toggle="collapse" data-target="#collapse-frontend" aria-expanded="false" aria-controls="collapse-frontend"> Front-End </button>
+                <button class="btn btn-link btn-accordion" type="button" data-toggle="collapse" data-target="#collapse-frontend" aria-expanded="false" aria-controls="collapse-frontend" data-i18n="frontend"> Front-End </button>
               </h3>
             </div>
             <div id="collapse-frontend" class="collapse" aria-labelledby="collapse-frontend-heading" data-parent="#skills-accordion">
@@ -167,7 +176,7 @@
           <div class="card">
             <div class="card-header" id="collapse-cloud-heading">
               <h3 class="mb-0">
-                <button class="btn btn-link btn-accordion" type="button" data-toggle="collapse" data-target="#collapse-cloud" aria-expanded="false" aria-controls="collapse-cloud"> Cloud </button>
+                <button class="btn btn-link btn-accordion" type="button" data-toggle="collapse" data-target="#collapse-cloud" aria-expanded="false" aria-controls="collapse-cloud" data-i18n="cloud"> Cloud </button>
               </h3>
             </div>
             <div id="collapse-cloud" class="collapse" aria-labelledby="collapse-cloud-heading" data-parent="#skills-accordion">
@@ -179,7 +188,7 @@
           <div class="card">
             <div class="card-header" id="collapse-automation-heading">
               <h3 class="mb-0">
-                <button class="btn btn-link btn-accordion" type="button" data-toggle="collapse" data-target="#collapse-automation" aria-expanded="false" aria-controls="collapse-automation"> Automatización </button>
+                <button class="btn btn-link btn-accordion" type="button" data-toggle="collapse" data-target="#collapse-automation" aria-expanded="false" aria-controls="collapse-automation" data-i18n="automation"> Automation </button>
               </h3>
             </div>
             <div id="collapse-automation" class="collapse" aria-labelledby="collapse-automation-heading" data-parent="#skills-accordion">
@@ -191,7 +200,7 @@
           <div class="card">
             <div class="card-header" id="collapse-bd-heading">
               <h3 class="mb-0">
-                <button class="btn btn-link btn-accordion" type="button" data-toggle="collapse" data-target="#collapse-bd" aria-expanded="false" aria-controls="collapse-bd"> Bases de datos </button>
+                <button class="btn btn-link btn-accordion" type="button" data-toggle="collapse" data-target="#collapse-bd" aria-expanded="false" aria-controls="collapse-bd" data-i18n="database"> Databases </button>
               </h3>
             </div>
             <div id="collapse-bd" class="collapse" aria-labelledby="collapse-bd-heading" data-parent="#skills-accordion">
@@ -203,7 +212,7 @@
           <div class="card">
             <div class="card-header" id="collapse-others-heading">
               <h3 class="mb-0">
-                <button class="btn btn-link btn-accordion" type="button" data-toggle="collapse" data-target="#collapse-others" aria-expanded="false" aria-controls="collapse-others"> Otros </button>
+                <button class="btn btn-link btn-accordion" type="button" data-toggle="collapse" data-target="#collapse-others" aria-expanded="false" aria-controls="collapse-others" data-i18n="others"> Others </button>
               </h3>
             </div>
             <div id="collapse-others" class="collapse" aria-labelledby="collapse-others-heading" data-parent="#skills-accordion">
@@ -217,28 +226,28 @@
           <div class="card-header">
             <ul class="nav nav-tabs nav-fill card-header-tabs" role="tablist">
               <li class="nav-item">
-                <a class="nav-link active" id="skill-security-tab" data-toggle="tab" href="#skill-security" role="tab" aria-controls="skill-security" aria-selected="true">Seguridad</a>
+                <a class="nav-link active" id="skill-security-tab" data-toggle="tab" href="#skill-security" role="tab" aria-controls="skill-security" aria-selected="true" data-i18n="security">Security</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="skill-pl-tab" data-toggle="tab" href="#skill-pl" role="tab" aria-controls="skill-pl" aria-selected="false">Lenguajes</a>
+                <a class="nav-link" id="skill-pl-tab" data-toggle="tab" href="#skill-pl" role="tab" aria-controls="skill-pl" aria-selected="false" data-i18n="pl">Programming Languages</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="skill-backend-tab" data-toggle="tab" href="#skill-backend" role="tab" aria-controls="skill-backend" aria-selected="false">Back-end</a>
+                <a class="nav-link" id="skill-backend-tab" data-toggle="tab" href="#skill-backend" role="tab" aria-controls="skill-backend" aria-selected="false" data-i18n="backend">Back-end</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="skill-frontend-tab" data-toggle="tab" href="#skill-frontend" role="tab" aria-controls="skill-frontend" aria-selected="false">Front-end</a>
+                <a class="nav-link" id="skill-frontend-tab" data-toggle="tab" href="#skill-frontend" role="tab" aria-controls="skill-frontend" aria-selected="false" data-i18n="frontend">Front-end</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="skill-cloud-tab" data-toggle="tab" href="#skill-cloud" role="tab" aria-controls="skill-cloud" aria-selected="false">Cloud</a>
+                <a class="nav-link" id="skill-cloud-tab" data-toggle="tab" href="#skill-cloud" role="tab" aria-controls="skill-cloud" aria-selected="false" data-i18n="cloud">Cloud</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="skill-automation-tab" data-toggle="tab" href="#skill-automation" role="tab" aria-controls="skill-automation" aria-selected="false">Automatización</a>
+                <a class="nav-link" id="skill-automation-tab" data-toggle="tab" href="#skill-automation" role="tab" aria-controls="skill-automation" aria-selected="false" data-i18n="automation">Automation</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="skill-db-tab" data-toggle="tab" href="#skill-db" role="tab" aria-controls="skill-db" aria-selected="false">Bases de datos</a>
+                <a class="nav-link" id="skill-db-tab" data-toggle="tab" href="#skill-db" role="tab" aria-controls="skill-db" aria-selected="false" data-i18n="database">Databases</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="skill-others-tab" data-toggle="tab" href="#skill-others" role="tab" aria-controls="skill-others" aria-selected="false">Otros</a>
+                <a class="nav-link" id="skill-others-tab" data-toggle="tab" href="#skill-others" role="tab" aria-controls="skill-others" aria-selected="false" data-i18n="others">Others</a>
               </li>
             </ul>
           </div>
@@ -273,24 +282,24 @@
         </div>
       </div>
       <div class="section cc-experience" id="experience">
-        <div class="h4 text-center mb-4 title">Experiencia profesional:</div>
+        <div class="h4 text-center mb-4 title"><span data-i18n="experience_desc">Professional Experience:</span></div>
         <div class="card mb-4">
           <div class="row">
             <div class="col-md-3 bg-blue" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
               <div class="card-body cc-experience-header">
-                <p>Mayo 2018 - Actualmente</p>
+                <p data-i18n="atos_work_time">May 2018 - Present</p>
                 <div class="h5">Atos IT</div>
                 <img src="images/atos.png" class="img-fluid d-none d-md-block" alt="">
               </div>
             </div>
             <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
               <div class="card-body">
-                <div class="h5">Investigador en Ciberseguridad</div>
-                <p>Participación en el desarrollo de un SIEM propio.</p>
-                <p>Desarrollo y puesta en producción de un analizador de riesgos dinámico.</p>
-                <p>Diseño y arquitectura de un sistema de gestión de PKI para el entorno CCAM.</p>
-                <p>Liderazgo en paquetes de trabajo dentro de proyectos en el marco Horizon2020.</p>
-                <div class="h6">Tecnologías usadas</div>
+                <div class="h5"><span data-i18n="cybersecurity_researcher">Cybersecurity Researcher</span></div>
+                <p data-i18n="atos_work_desc_1"></p>
+                <p data-i18n="atos_work_desc_2"></p>
+                <p data-i18n="atos_work_desc_3"></p>
+                <p data-i18n="atos_work_desc_4"></p>
+                <div class="h6"><span data-i18n="used_technologies">Used technologies</span></div>
                 <p>Java, Javascript, Python, Django, Spring Boot, Spring Cloud, Maven, Docker, Kubernetes, Jenkins, Nexus, OpenVAS, Zabbix, Keycloak, OSSEC, SIEM, Grafana, Sonarqube, PostgreSQL, MariaDB, MongoDB, NGINX</p>
               </div>
             </div>
@@ -300,19 +309,19 @@
           <div class="row">
             <div class="col-md-3 bg-blue" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
               <div class="card-body cc-experience-header">
-                <p>Octubre 2016 - Mayo 2018</p>
+                <p data-i18n="tetralog_work_time">October 2016 - May 2018</p>
                 <div class="h5">tetralog Systems</div>
                 <img src="images/tetralog.jfif" class="img-fluid d-none d-md-block" style="padding-left: 30px;padding-right: 30px;" alt="">
               </div>
             </div>
             <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
               <div class="card-body">
-                <div class="h5">Ingeniero Software Senior</div>
-                <p>Desarrollo de diferentes aplicaciones y microservicios para el sector financiero en un entorno de trabajo internacional.</p>
-                <p>Dockerización de aplicaciones.</p>
-                <p>Uso de metodologías ágiles como Scrum y Kanban.</p>
-                <p>Migraciones de datos en MongoDB.</p>
-                <div class="h6">Tecnologías usadas</div>
+                <div class="h5"><span data-i18n="sr_soft_engineer">Senior Software Engineer</span></div>
+                <p data-i18n="tetralog_work_desc_1"></p>
+                <p data-i18n="tetralog_work_desc_2"></p>
+                <p data-i18n="tetralog_work_desc_3"></p>
+                <p data-i18n="tetralog_work_desc_4"></p>
+                <div class="h6"><span data-i18n="used_technologies">Used technologies</span></div>
                 <p>Java, Javascript, AngularJS, Spring Framework, Spring Boot, Maven, Docker, Jenkins, Grunt, Bower, MySQL, jQuery, Jira, SVN, Git, Wildfly, Tomcat, MongoDB</p>
               </div>
             </div>
@@ -322,31 +331,28 @@
           <div class="row">
             <div class="col-md-3 bg-blue" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
               <div class="card-body cc-experience-header">
-                <p>Junio 2014 - Octubre 2016</p>
+                <p data-i18n="atos2_work_time">June 2014 - October 2016</p>
                 <div class="h5">Atos IT</div>
                 <img src="images/atos.png" class="img-fluid d-none d-md-block" alt="">
               </div>
             </div>
             <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
               <div class="card-body">
-                <div class="h5">Ingeniero Software Senior</div>
-                <div class="h6">Marzo 2016</div>
-                <p>Desarrollo, mantenimiento y resolución de incidencias para aplicaciones en los sectores energéticos y de gas.</p>
-                <p>Diseño e implementación de un proyecto desde 0 para comunicar facturas con la AEAT.</p>
-                <p>Diseño de interfaces de comunicación entre servicios.</p>
-                <p>Realización de diseños técnicos, planes de prueba y manuales de usuario de forma ocasional.</p>
-                <p>Implantación de Spring Security, autorizado mediante LDAP en el marco de una migración tecnológica.</p>
-                <div class="h5">Ingeniero Software Junior</div>
-                <div class="h6">Diciembre 2014</div>
-                <p>Desarrollo, mantenimiento y resolución de incidencias para aplicaciones en los sectores energéticos y de gas.</p>
-                <p>Implementación de un proyecto basado en Spring Boot, Spring Batch, Java 8, JPA2.1 y Primefaces.</p>
-                <p>Diseño de interfaces de comunicación entre servicios.</p>
-                <p>Realización de diseños técnicos, planes de prueba y manuales de usuario de forma esporádica.</p>
-                <p>Implantación de Spring Security, autorizado mediante LDAP en el marco de una migración tecnológica.</p>
-                <div class="h5">Becario</div>
-                <div class="h6">Junio 2014</div>
-                <p>Desarrollo y mantenimiento evolutivo de una aplicación interna para la gestión de proyectos de la empresa.</p>
-                <div class="h6">Tecnologías usadas</div>
+                <div class="h5"><span data-i18n="sr_soft_engineer">Senior Software Engineer</span></div>
+                <div class="h6"><span data-i18n="march_2016">March 2016</span></div>
+                <p data-i18n="atos21_work_desc_1"></p>
+                <p data-i18n="atos21_work_desc_2"></p>
+                <p data-i18n="atos21_work_desc_3"></p>
+                <p data-i18n="atos21_work_desc_4"></p>
+                <p data-i18n="atos21_work_desc_5"></p>
+                <div class="h5"><span data-i18n="jr_soft_engineer">Junior Software Engineer</span></div>
+                <div class="h6"><span data-i18n="dec_2014">December 2014</span></div>
+                <p data-i18n="atos22_work_desc_1"></p>
+                <p data-i18n="atos22_work_desc_2"></p>
+                <div class="h5"><span data-i18n="intern">Intern</span></div>
+                <div class="h6"><span data-i18n="june_2014">June 2014</span></div>
+                <p data-i18n="atos23_work_desc"></p>
+                <div class="h6"><span data-i18n="used_technologies">Used technologies</span></div>
                 <p>Java, JSF, Spring Boot, Spring Framework, Hibernate, JPA, Maven, PL-SQL, Primefaces, Bootstrap, jQuery, JBoss, Wildfly, SVN, Struts, MyBatis, Gradle, Struts, Richfaces</p>
               </div>
             </div>
@@ -356,17 +362,17 @@
           <div class="row">
             <div class="col-md-3 bg-blue" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
               <div class="card-body cc-experience-header">
-                <p>Diciembre 2013 - Febrero 2014</p>
+                <p data-i18n="tier1_work_time">December 2013 - February 2014</p>
                 <div class="h5">Tier1 S.L.</div>
                 <img src="images/tier1.png" class="img-fluid d-none d-md-block" alt="">
               </div>
             </div>
             <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
               <div class="card-body">
-                <div class="h5">Becario</div>
-                <p>Desarrollo de varios portlets de Liferay para una tienda virtual de la Junta de Andalucía.</p>
-                <p>En particular, los portlets de carrito de la compra y detalle de producto, y un portlet interno de configuración.</p>
-                <div class="h6">Tecnologías usadas</div>
+                <div class="h5"><span data-i18n="intern">Intern</span></div>
+                <p data-i18n="tier1_work_desc1"></p>
+                <p data-i18n="tier1_work_desc2"></p>
+                <div class="h6"><span data-i18n="used_technologies">Used technologies</span></div>
                 <p>Java, Javascript, JSP, Liferay, Maven, SQL, Jasper Reports</p>
               </div>
             </div>
@@ -376,17 +382,17 @@
           <div class="row">
             <div class="col-md-3 bg-blue" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
               <div class="card-body cc-experience-header">
-                <p>Octubre 2013 - Diciembre 2013</p>
+                <p data-i18n="foulders_work_time">October 2013 - December 2013</p>
                 <div class="h5">Foulders</div>
                 <img src="images/foulders.png" class="img-fluid d-none d-md-block" style="padding-left: 35px;padding-right: 35px;" alt="">
               </div>
             </div>
             <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
               <div class="card-body">
-                <div class="h5">Becario</div>
-                <p>Integración de los servicios de Google en la aplicación.</p>
-                <p>Más en detalle, APIs de Calendar, Tasks y Drive.</p>
-                <div class="h6">Tecnologías usadas</div>
+                <div class="h5"><span data-i18n="intern">Intern</span></div>
+                <p data-i18n="foulders_work_desc1"></p>
+                <p data-i18n="foulders_work_desc2"></p>
+                <div class="h6"><span data-i18n="used_technologies">Used technologies</span></div>
                 <p>Java, GWT, Maven, SQL, JSP, APIs de Google</p>
               </div>
             </div>
@@ -396,7 +402,7 @@
       <div class="section" id="projects">
         <div class="row">
           <div class="col-md-6 ml-auto mr-auto">
-            <div class="h4 text-center mb-4 title">Proyectos</div>
+            <div class="h4 text-center mb-4 title"><span data-i18n="projects">Projects</span></div>
             <div class="nav-align-center">
               <ul class="nav nav-pills nav-pills-primary" role="tablist">
                 <li class="nav-item"><a class="nav-link active a-blue" data-toggle="tab" href="#security" role="tablist" rel="tooltip" data-trigger="hover" title="Proyectos Seguridad"><i class="fa fa-lock" aria-hidden="true"></i></a></li>
@@ -417,7 +423,7 @@
                         <figure class="cc-effect"><img src="images/sourceeye.jpg" alt="Image" />
                           <figcaption class="align-items-center d-flex flex-column justify-content-center">
                             <div class="h4">Source Eye</div>
-                            <p>Escáner Vulnerabilidades</p>
+                            <p data-i18n="vuln_scanning">Vulnerability Scanner</p>
                           </figcaption>
                         </figure>
                       </div>
@@ -430,11 +436,11 @@
                             </a>
                           </div>
                           <div class="card-body text-justify">
-                            <p class="card-text">Planificación, diseño y desarrollo de un analizador de vulnerabilidades en dependencias de terceros.</p>
-                            <p class="card-text">Basado en OWASP Dependency-Check.</p>
-                            <p class="card-text">Proyecto fin de Máster. Nota: 9.</p>
+                            <p class="card-text" data-i18n="se_desc_1"></p>
+                            <p class="card-text" data-i18n="se_desc_2"></p>
+                            <p class="card-text" data-i18n="se_desc_3"></p>
                           </div>
-                          <div class="card-footer">Julio 2018 - Septiembre 2018 </div>
+                          <div class="card-footer"><span data-i18n="se_time">July 2018 - September 2018</span> </div>
                         </div>
                       </div>
                     </div>
@@ -453,7 +459,7 @@
                         <figure class="cc-effect"><img src="images/gpe.jpg" alt="Image" />
                           <figcaption class="align-items-center d-flex flex-column justify-content-center">
                             <div class="h4">Gestor de Proyectos y Equipos</div>
-                            <p>Gestión de Proyectos</p>
+                            <p data-i18n="project_management">Project Management</p>
                           </figcaption>
                         </figure>
                       </div>
@@ -466,11 +472,11 @@
                             </a>
                           </div>
                           <div class="card-body text-justify">
-                            <p class="card-text">Planificación, diseño y desarrollo de una aplicación web centrada en la planificación de proyectos y equipos dentro de una empresa que haga uso de la metodología Métrica v3.</p>
-                            <p class="card-text">Aplicación enfocada a la planificación temporal de los proyectos, teniendo la posibilidad de manejar la asignación de tareas y detectar caminos críticos en el proyecto.</p>
-                            <p class="card-text">Proyecto Fin de Carrera. Nota: 9,5.</p>
+                            <p class="card-text" data-i18n="gpe_desc_1"></p>
+                            <p class="card-text" data-i18n="gpe_desc_2"></p>
+                            <p class="card-text" data-i18n="gpe_desc_3"></p>
                           </div>
-                          <div class="card-footer"> Enero 2015 - Septiembre 2016 </div>
+                          <div class="card-footer"><span data-i18n="gpe_time">January 2015 - September 2016</span></div>
                         </div>
                       </div>
                     </div>
@@ -481,7 +487,7 @@
                         <figure class="cc-effect"><img src="images/clubdeportivo.jpg" alt="Image" />
                           <figcaption class="align-items-center d-flex flex-column justify-content-center">
                             <div class="h4">Proyecto Club Deportivo</div>
-                            <p>Gestión Instalaciones</p>
+                            <p data-i18n="facilities_management">Facilities Management</p>
                           </figcaption>
                         </figure>
                       </div>
@@ -494,11 +500,11 @@
                             </a>
                           </div>
                           <div class="card-body text-justify">
-                            <p class="card-text">Aplicación web con el objetivo de permitir la gestión online de un club deportivo.</p>
-                            <p class="card-text">Entre sus funcionalidades, se encuentran la gestión de usuarios y la gestión de reservas de las instalaciones.</p>
-                            <p class="card-text">Proyecto académico. Nota: 8,5.</p>
+                            <p class="card-text" data-i18n="gus_desc1"></p>
+                            <p class="card-text" data-i18n="gus_desc2"></p>
+                            <p class="card-text" data-i18n="gus_desc3"></p>
                           </div>
-                          <div class="card-footer"> Septiembre 2012 - Febrero 2013 </div>
+                          <div class="card-footer"><span data-i18n="gus_time">September 2012 - February 2013</span></div>
                         </div>
                       </div>
                     </div>
@@ -511,7 +517,7 @@
                         <figure class="cc-effect"><img src="images/betme.jpg" alt="Image" />
                           <figcaption class="align-items-center d-flex flex-column justify-content-center">
                             <div class="h4">Bet Me</div>
-                            <p>Apuestas Deportivas</p>
+                            <p data-i18n="sports_gamble">Sports Gamble</p>
                           </figcaption>
                         </figure>
                       </div>
@@ -524,10 +530,10 @@
                             </a>
                           </div>
                           <div class="card-body text-justify">
-                            <p class="card-text">Aplicación web simulando una casa de apuestas centrada en los e-sports.</p>
-                            <p class="card-text">Proyecto académico (MFIS). Nota: 10.</p>
+                            <p class="card-text" data-i18n="betme_desc1"></p>
+                            <p class="card-text" data-i18n="betme_desc2"></p>
                           </div>
-                          <div class="card-footer"> Febrero 2014 - Junio 2014 </div>
+                          <div class="card-footer"><span data-i18n="betme_time">February 2014 - June 2014</span></div>
                         </div>
                       </div>
                     </div>
@@ -546,7 +552,7 @@
                         <figure class="cc-effect"><img src="images/antispam.jpg" alt="Image" />
                           <figcaption class="align-items-center d-flex flex-column justify-content-center">
                             <div class="h4">Filtro Anti-SPAM</div>
-                            <p>Inteligencia Artificial</p>
+                            <p data-i18n="ia">Artificial Intelligence</p>
                           </figcaption>
                         </figure>
                       </div>
@@ -559,12 +565,12 @@
                             </a>
                           </div>
                           <div class="card-body text-justify">
-                            <p class="card-text">Proyecto con el objectivo de filtrar correos de spam.</p>
-                            <p class="card-text">Es una implementación de una red neuronal bayesiana.</p>
-                            <p class="card-text">Dispone de una interfaz gráfica que permite cargar y guardar entrenamientos de la red neuronal.</p>
-                            <p class="card-text">Proyecto académico (IA). Nota: 10.</p>
+                            <p class="card-text" data-i18n="ia_desc1"></p>
+                            <p class="card-text" data-i18n="ia_desc2"></p>
+                            <p class="card-text" data-i18n="ia_desc3"></p>
+                            <p class="card-text" data-i18n="ia_desc4"></p>
                           </div>
-                          <div class="card-footer"> Octubre 2014 - Diciembre 2014 </div>
+                          <div class="card-footer"><span data-i18n="ia_time">October 2014 - December 2014</span></div>
                         </div>
                       </div>
                     </div>
@@ -577,26 +583,26 @@
       </div>
       <div class="section" id="education">
         <div class="cc-education">
-          <div class="h4 text-center mb-4 title">Educación Universitaria:</div>
+          <div class="h4 text-center mb-4 title"><span data-i18n="education_university">University Education</span></div>
           <div class="card mb-4">
             <div class="row">
               <div class="col-md-3 bg-blue" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body cc-education-header">
                   <p>2017 - 2018</p>
-                  <div class="h5">Master</div>
+                  <div class="h5" data-i18n="msc"></div>
                 </div>
               </div>
               <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body">
-                  <div class="h5">Máster en Ciberseguridad</div>
-                  <p class="category">Universidad de Sevilla</p>
-                  <p>Máster que busca abordar con profundidad técnica todos los aspectos relacionados con la Ciberseguridad, capacitando para: </p>
+                  <div class="h5" data-i18n="cs_master"></div>
+                  <p class="category" data-i18n="seville_university"></p>
+                  <p data-i18n="cs_msc_desc1"></p>
                   <ul>
-                    <li>Desarrollo de software seguro en plataformas Windows/Linux y plataformas móviles (apps)</li>
-                    <li>Bastionado de la red y sistemas TICs</li>
-                    <li>Implantación de un sistema de gestión de seguridad en una empresa</li>
-                    <li>Realización auditorías de seguridad incluyendo técnicas avanzadas de Hacking Ético</li>
-                    <li>Elaboración de informes periciales de informática forense en el ámbito de las TICs</li>
+                    <li data-i18n="cs_msc_desc2"></li>
+                    <li data-i18n="cs_msc_desc3"></li>
+                    <li data-i18n="cs_msc_desc4"></li>
+                    <li data-i18n="cs_msc_desc5"></li>
+                    <li data-i18n="cs_msc_desc6"></li>
                   </ul>
                 </div>
               </div>
@@ -607,14 +613,14 @@
               <div class="col-md-3 bg-blue" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body cc-education-header">
                   <p>2007 - 2016</p>
-                  <div class="h5">Ingeniería Superior</div>
+                  <div class="h5" data-i18n="superior_eng"></div>
                 </div>
               </div>
               <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body">
-                  <div class="h5">Ingeniería Superior en Informática</div>
-                  <p class="category">Universidad de Sevilla</p>
-                  <p>Titulación de Ingeniero en Informática según el Plan del 97.</p>
+                  <div class="h5" data-i18n="eng_title"></div>
+                  <p class="category" data-i18n="seville_university"></p>
+                  <p data-i18n="eng_desc"></p>
                 </div>
               </div>
             </div>
@@ -623,21 +629,21 @@
       </div>
       <div class="section">
         <div class="cc-education">
-          <div class="h4 text-center mb-4 title">Otra Formación:</div>
+          <div class="h4 text-center mb-4 title"><span data-i18n="education_other">Other education</span></div>
           <div class="card mb-4">
             <div class="row">
               <div class="col-md-3 bg-blue" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body cc-education-header">
-                  <p>13 horas</p>
-                  <div class="h5">Curso Online</div>
+                  <p>13 <span data-i18n="hours">hours</span></p>
+                  <div class="h5" data-i18n="online_course"></div>
                 </div>
               </div>
               <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body">
-                  <div class="h5">Preparación CISSP</div>
+                  <div class="h5" data-i18n="cissp_prep"></div>
                   <p class="category">Atos University</p>
-                  <p>Curso de preparación para la certificación CISSP.</p>
-                  <p>Se cubren los 8 dominios de la certificación.</p>
+                  <p data-i18n="cissp_prep_desc1"></p>
+                  <p data-i18n="cissp_prep_desc2"></p>
                 </div>
               </div>
             </div>
@@ -646,16 +652,16 @@
             <div class="row">
               <div class="col-md-3 bg-blue" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body cc-education-header">
-                  <p>19 horas</p>
-                  <div class="h5">Curso Online</div>
+                  <p>19 <span data-i18n="hours">hours</span></p>
+                  <div class="h5" data-i18n="online_course"></div>
                 </div>
               </div>
               <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body">
                   <div class="h5">AWS CSA Associate</div>
                   <p class="category">A Cloud Guru</p>
-                  <p>Curso ofrecido por la plataforma A Cloud Guru, en el que se prepara para la obtención de la certificación de AWS Certified Solution Architect.</p>
-                  <p>El contenido del curso puede verse <a href="https://acloud.guru/learn/aws-certified-solutions-architect-associate" target="_blank">aquí.</a></p>
+                  <p data-i18n="aws_desc1"></p>
+                  <p data-i18n="aws_desc2"></p>
                 </div>
               </div>
             </div>
@@ -664,15 +670,15 @@
             <div class="row">
               <div class="col-md-3 bg-blue" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body cc-education-header">
-                  <p>20 horas</p>
-                  <div class="h5">Curso Presencial</div>
+                  <p>20 <span data-i18n="hours">hours</span></p>
+                  <div class="h5" data-i18n="presential_course"></div>
                 </div>
               </div>
               <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body">
-                  <div class="h5">Formación en Scrum y metodologias Ágiles</div>
+                  <div class="h5" data-i18n="scrum_course"></div>
                   <p class="category">Tetralog Systems S.L.</p>
-                  <p>Introducción a las metodologías ágiles, con especial foco en Scrum y Kanban.</p>
+                  <p data-i18n="scrum_course_desc"></p>
                 </div>
               </div>
             </div>
@@ -681,16 +687,16 @@
             <div class="row">
               <div class="col-md-3 bg-blue" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body cc-education-header">
-                  <p>120 horas</p>
-                  <div class="h5">Curso Online</div>
+                  <p>120 <span data-i18n="hours">hours</span></p>
+                  <div class="h5" data-i18n="online_course"></div>
                 </div>
               </div>
               <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body">
-                  <div class="h5">Programación en Android</div>
+                  <div class="h5" data-i18n="android_course"></div>
                   <p class="category">Universidad Politécnica de Valencia</p>
-                  <p>Curso ofrecido a través de la plataforma MiríadaX.</p>
-                  <p>Se entrena la programación básica en un entorno Android. Se realiza el juego Asteroides.</p>
+                  <p data-i18n="android_desc1"></p>
+                  <p data-i18n="android_desc2"></p>
                 </div>
               </div>
             </div>
@@ -699,20 +705,20 @@
             <div class="row">
               <div class="col-md-3 bg-blue" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body cc-education-header">
-                  <p>100 horas</p>
-                  <div class="h5">Curso Online</div>
+                  <p>100 <span data-i18n="hours">hours</span></p>
+                  <div class="h5" data-i18n="online_course"></div>
                 </div>
               </div>
               <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body">
                   <div class="h5">Software as a Service</div>
-                  <p class="category">Universidad de Berkeley</p>
-                  <p>Curso ofrecido a través de la plataforma EDX.</p>
+                  <p class="category" data-i18n="berkeley_university"></p>
+                  <p data-i18n="saas_desc1"></p>
                   <ul>
-                    <li>Programación básica en Ruby usando el framework Rails</li>
-                    <li>BDD usando Cucumber y Capybara</li>
-                    <li>TDD usando RSpec</li>
-                    <li>Ciclo de vida del software</li>
+                    <li data-i18n="saas_desc2"></li>
+                    <li data-i18n="saas_desc3"></li>
+                    <li data-i18n="saas_desc4"></li>
+                    <li data-i18n="saas_desc5"></li>
                   </ul>
                 </div>
               </div>
@@ -730,18 +736,22 @@
     </div>
     <div class="h4 title text-center">Pablo Barrientos</div>
     <div class="text-center text-muted">
-      <p>&copy; Creative CV. All rights reserved.<br>Design - <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
+      <p>&copy; Creative CV. All rights reserved.
+        <br>Design based on <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
     </div>
   </footer>
+
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="js/now-ui-kit.js?v=1.1.0"></script>
   <script src="js/aos.js"></script>
+  <script src="js/jquery.i18n.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/include-html.js"></script>
   <script type="text/javascript">
     includeHTML();
+
     $(function() {
       $(".flip-card").click(function() {
         $(this).toggleClass("flip-hover");
@@ -751,8 +761,20 @@
       if (isIOS) {
         $(".cc-effect").removeClass("cc-effect").addClass("cc-effect-ios");
       }
-    });
 
+      $.i18n().load({
+        'en': 'i18n/en.json',
+        'es': 'i18n/es.json'
+      }).done(function() {
+        $('.locale-switcher').click(function(e) {
+          e.preventDefault();
+          console.log($(this).data('locale'));
+          $.i18n().locale = $(this).data('locale');
+          $('html').i18n();
+        });
+        $('html').i18n();
+      });
+    });
   </script>
 </body>
 
