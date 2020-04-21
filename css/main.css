@@ -5651,6 +5651,9 @@ Created using IcoMoon - icomoon.io
   .sidebar-collapse .navbar .navbar-nav {
     margin-top: 53px;
   }
+  .sidebar-collapse .navbar .navbar-nav.navbar-i18n {
+    margin-top: 0px;
+  }
   .sidebar-collapse .navbar .navbar-nav .nav-link {
     padding-top: 0.75rem;
     padding-bottom: .75rem;
@@ -5692,7 +5695,6 @@ Created using IcoMoon - icomoon.io
     color: #FFFFFF;
   }
   .sidebar-collapse .navbar .navbar-translate {
-    width: 100%;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7405,6 +7407,10 @@ a.credit {
   display: none;
 }
 
+.navbar-transparent .navbar-expand {
+  display: block !important;
+}
+
 .btn.btn-link.btn-accordion {
   width: 100%;
   text-align: left;
@@ -7427,6 +7433,7 @@ a.credit {
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card.flip-hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
 }
 
@@ -7445,6 +7452,7 @@ a.credit {
 /* Style the back side */
 .flip-card-back {
   background-color: #fff;;
+  -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
   position: absolute;
   width: 100%;

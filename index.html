@@ -12,6 +12,7 @@
     }
     gtag('js', new Date());
     gtag('config', 'UA-163697237-1');
+
   </script>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,7 +25,6 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="css/main.css" rel="stylesheet">
 </head>
-
 <!--include-html="fragments/cv-es.html"-->
 
 <body id="top">
@@ -32,17 +32,17 @@
     <div class="profile-page sidebar-collapse">
       <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-indigo" color-on-scroll="400">
         <div class="container">
-          <div class="navbar-translate">
-            <a class="navbar-brand" href="#">
-              <img src="images/perfil.jpg" width="30" height="30" class="d-inline-block align-top rounded-circle" alt=""> Pablo Barrientos
-            </a>
-            <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
-          </div>
-          <div class="collapse navbar-collapse justify-content-start">
-            <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link locale-switcher" href="#" data-locale="en">EN</a></li>
+          <div class="navbar-expand d-none">
+            <ul class="navbar-nav navbar-i18n">
+              <li class="nav-item active"><a class="nav-link locale-switcher" href="#" data-locale="en">EN</a></li>
               <li class="nav-item"><a class="nav-link locale-switcher" href="#" data-locale="es">ES</a></li>
             </ul>
+          </div>
+          <div class="navbar-translate flex-fill">
+            <a class="navbar-brand" href="#">
+              <img src="images/perfil.jpg" width="30" height="30" class="d-inline-block align-top rounded-circle" alt=""> Pablo Barrientos </a>
+            <button class="navbar-toggler navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
           </div>
           <div class="collapse navbar-collapse justify-content-end" id="navigation">
             <ul class="navbar-nav">
@@ -67,7 +67,8 @@
               <a href="#"><img src="images/perfil.jpg" alt="Image" /></a>
             </div>
             <div class="h2 title">Pablo Barrientos</div>
-            <p class="category text-white" data-i18n="cv_title">Ingeniero en Informática, Máster en Ciberseguridad</p><a class="btn disabled btn-info bg-yellow-dark" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor"><span data-i18n="download_cv">Download CV</span></a>
+            <p class="category text-white" data-i18n="cv_title">Ingeniero en Informática, Máster en Ciberseguridad</p><a class="btn disabled btn-info bg-yellow-dark" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor"><span
+                data-i18n="download_cv">Download CV</span></a>
           </div>
         </div>
         <div class="section">
@@ -78,9 +79,6 @@
               </a>
               <a class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/PBarri" target="_blank" rel="tooltip" title="Mira mi trabajo en Github">
                 <i class="fa fa-github"></i>
-              </a>
-              <a class="btn btn-default btn-round btn-lg btn-icon" href="https://twitter.com/PBarri13" rel="tooltip" title="Sígueme en Twitter">
-                <i class="fa fa-twitter"></i>
               </a>
             </div>
           </div>
@@ -431,7 +429,7 @@
                         <div class="card">
                           <div class="card-header pb-0 pt-0 d-flex align-items-center">
                             <span> SOURCE EYE</span>
-                            <a class="cc-github btn btn-link ml-auto" href="https://github.com/PBarri/GPE" target="_blank" rel="tooltip" title="Mira el código en Github">
+                            <a class="cc-github btn btn-link ml-auto" href="https://github.com/PBarri/source-eye" target="_blank" rel="tooltip" title="Mira el código en Github">
                               <i class="fa fa-github fa-2x " aria-hidden="true"></i>
                             </a>
                           </div>
@@ -730,17 +728,14 @@
   </section>
   <footer class="footer">
     <div class="text-center">
-      <a class="cc-linkedin btn btn-link" href="#"><i class="fa fa-linkedin fa-2x " aria-hidden="true"></i></a>
-      <a class="cc-github btn btn-link " href="#"><i class="fa fa-github fa-2x " aria-hidden="true"></i></a>
-      <a class="cc-twitter btn btn-link " href="#"><i class="fa fa-twitter fa-2x " aria-hidden="true"></i></a>
+      <a class="cc-linkedin btn btn-link" href="https://www.linkedin.com/in/pablobarrientoslobato" target="_blank"><i class="fa fa-linkedin fa-2x " aria-hidden="true"></i></a>
+      <a class="cc-github btn btn-link " href="https://github.com/PBarri" target="_blank"><i class="fa fa-github fa-2x " aria-hidden="true"></i></a>
     </div>
     <div class="h4 title text-center">Pablo Barrientos</div>
     <div class="text-center text-muted">
-      <p>&copy; Creative CV. All rights reserved.
-        <br>Design based on <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
+      <p><br>Design based on <a class="credit" href="https://templateflip.com" target="_blank">TemplateFlip</a></p>
     </div>
   </footer>
-
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -751,7 +746,6 @@
   <script src="js/include-html.js"></script>
   <script type="text/javascript">
     includeHTML();
-
     $(function() {
       $(".flip-card").click(function() {
         $(this).toggleClass("flip-hover");
@@ -761,20 +755,21 @@
       if (isIOS) {
         $(".cc-effect").removeClass("cc-effect").addClass("cc-effect-ios");
       }
-
       $.i18n().load({
         'en': 'i18n/en.json',
         'es': 'i18n/es.json'
       }).done(function() {
         $('.locale-switcher').click(function(e) {
           e.preventDefault();
-          console.log($(this).data('locale'));
+          $(this).parent().parent().children().removeClass("active");
+          $(this).parent().addClass("active");
           $.i18n().locale = $(this).data('locale');
           $('html').i18n();
         });
         $('html').i18n();
       });
     });
+
   </script>
 </body>
 
