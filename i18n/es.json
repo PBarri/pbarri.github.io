@@ -114,7 +114,8 @@
   "cissp_prep_desc1": "Curso de preparación para la certificación CISSP.",
   "cissp_prep_desc2": "Se cubren los 8 dominios de la certificación.",
   "aws_desc1": "Curso ofrecido por la plataforma A Cloud Guru, en el que se prepara para la obtención de la certificación de AWS Certified Solution Architect.",
-  "aws_desc2": "El contenido del curso puede verse <a href='https://acloud.guru/learn/aws-certified-solutions-architect-associate' target='_blank'>aquí.</a>",
+  "aws_desc2": "El contenido del curso puede verse ",
+  "here": "aquí.",
   "scrum_course": "Formación en Scrum y metodologias Ágiles",
   "scrum_course_desc": "Introducción a las metodologías ágiles, con especial foco en Scrum y Kanban.",
   "android_course": "Programación en Android",
@@ -129,5 +130,11 @@
   "level_expert": "Experto",
   "level_beginner": "Básico",
   "level_intermediate": "Intermedio",
-  "level_advanced": "Avanzado"
+  "level_advanced": "Avanzado",
+  "tooltip_security": "Proyectos de Seguridad",
+  "tooltip_webapp": "Aplicaciones Web",
+  "tooltip_desktop": "Aplicaciones de Escritorio",
+  "tooltip_linkedin": "Sígueme en LinkedIn",
+  "tooltip_github": "Mira mi trabajo en Github",
+  "tooltip_github_code": "Mira el código en Github"
 }

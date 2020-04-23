@@ -25,7 +25,6 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link href="css/main.css" rel="stylesheet">
 </head>
-<!--include-html="fragments/cv-es.html"-->
 
 <body id="top">
   <header>
@@ -34,8 +33,8 @@
         <div class="container">
           <div class="navbar-expand d-none">
             <ul class="navbar-nav navbar-i18n">
-              <li class="nav-item active"><a class="nav-link locale-switcher" href="#" data-locale="en">EN</a></li>
-              <li class="nav-item"><a class="nav-link locale-switcher" href="#" data-locale="es">ES</a></li>
+              <li class="nav-item active"><a id="EN" class="nav-link locale-switcher" href="#" data-locale="en">EN</a></li>
+              <li class="nav-item"><a id="ES" class="nav-link locale-switcher" href="#" data-locale="es">ES</a></li>
             </ul>
           </div>
           <div class="navbar-translate flex-fill">
@@ -67,17 +66,16 @@
               <a href="#"><img src="images/perfil.jpg" alt="Image" /></a>
             </div>
             <div class="h2 title">Pablo Barrientos</div>
-            <p class="category text-white" data-i18n="cv_title">Ingeniero en Informática, Máster en Ciberseguridad</p><a class="btn disabled btn-info bg-yellow-dark" href="#" data-aos="zoom-in" data-aos-anchor="data-aos-anchor"><span
-                data-i18n="download_cv">Download CV</span></a>
+            <p class="category text-white" data-i18n="cv_title">Ingeniero en Informática, Máster en Ciberseguridad</p>
           </div>
         </div>
         <div class="section">
           <div class="container">
             <div class="button-container">
-              <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/pablobarrientoslobato" target="_blank" rel="tooltip" title="Sígueme en LinkedIn">
+              <a class="btn btn-default btn-round btn-lg btn-icon" href="https://www.linkedin.com/in/pablobarrientoslobato" target="_blank" rel="tooltip" title="Follow me on LinkedIn">
                 <i class="fa fa-linkedin"></i>
               </a>
-              <a class="btn btn-default btn-round btn-lg btn-icon" href="https://github.com/PBarri" target="_blank" rel="tooltip" title="Mira mi trabajo en Github">
+              <a class="btn btn-default btn-round btn-lg btn-icon github-user" href="https://github.com/PBarri" target="_blank" rel="tooltip" title="Check my work at Github">
                 <i class="fa fa-github"></i>
               </a>
             </div>
@@ -94,9 +92,9 @@
             <div class="col-lg-6 col-md-12">
               <div class="card-body">
                 <div class="h4 mt-0 title"><span data-i18n="about_me_desc">About me</span></div>
-                <p data-i18n="about_me_1"></p>
-                <p data-i18n="about_me_2"></p>
-                <p data-i18n="about_me_3"></p>
+                <p class="text-justify" data-i18n="about_me_1"></p>
+                <p class="text-justify" data-i18n="about_me_2"></p>
+                <p class="text-justify" data-i18n="about_me_3"></p>
               </div>
             </div>
             <div class="col-lg-6 col-md-12">
@@ -105,10 +103,6 @@
                 <div class="row">
                   <div class="col-sm-4"><strong class="text-uppercase" data-i18n="age">Age:</strong></div>
                   <div class="col-sm-8">30</div>
-                </div>
-                <div class="row mt-3">
-                  <div class="col-sm-4"><strong class="text-uppercase">Email:</strong></div>
-                  <div class="col-sm-8">pablo.barrientoslobato@gmail.com</div>
                 </div>
                 <div class="row mt-3">
                   <div class="col-sm-4"><strong class="text-uppercase" data-i18n="languages">Languages:</strong></div>
@@ -403,9 +397,15 @@
             <div class="h4 text-center mb-4 title"><span data-i18n="projects">Projects</span></div>
             <div class="nav-align-center">
               <ul class="nav nav-pills nav-pills-primary" role="tablist">
-                <li class="nav-item"><a class="nav-link active a-blue" data-toggle="tab" href="#security" role="tablist" rel="tooltip" data-trigger="hover" title="Proyectos Seguridad"><i class="fa fa-lock" aria-hidden="true"></i></a></li>
-                <li class="nav-item"><a class="nav-link a-blue" data-toggle="tab" href="#web-development" role="tablist" rel="tooltip" data-trigger="hover" title="Aplicaciones Web"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
-                <li class="nav-item"><a class="nav-link a-blue" data-toggle="tab" href="#desktop-development" role="tablist" rel="tooltip" data-trigger="hover" title="Aplicaciones Escritorio"><i class="fa fa-laptop" aria-hidden="true"></i></a></li>
+                <li class="nav-item">
+                  <a id="security-project-anchor" class="nav-link active a-blue" data-toggle="tab" href="#security" role="tablist" rel="tooltip" data-trigger="hover" title="Security Projects"><i class="fa fa-lock" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a id="webapps-anchor" class="nav-link a-blue" data-toggle="tab" href="#web-development" role="tablist" rel="tooltip" data-trigger="hover" title="Web Applications"><i class="fa fa-globe" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a id="desktop-apps--anchor" class="nav-link a-blue" data-toggle="tab" href="#desktop-development" role="tablist" rel="tooltip" data-trigger="hover" title="Desktop Applications"><i class="fa fa-laptop" aria-hidden="true"></i></a>
+                </li>
               </ul>
             </div>
           </div>
@@ -429,7 +429,7 @@
                         <div class="card">
                           <div class="card-header pb-0 pt-0 d-flex align-items-center">
                             <span> SOURCE EYE</span>
-                            <a class="cc-github btn btn-link ml-auto" href="https://github.com/PBarri/source-eye" target="_blank" rel="tooltip" title="Mira el código en Github">
+                            <a class="cc-github btn btn-link ml-auto github-code" href="https://github.com/PBarri/source-eye" target="_blank" rel="tooltip" title="Check the code at Github">
                               <i class="fa fa-github fa-2x " aria-hidden="true"></i>
                             </a>
                           </div>
@@ -465,7 +465,7 @@
                         <div class="card">
                           <div class="card-header pb-0 pt-0 d-flex align-items-center">
                             <span> GPE</span>
-                            <a class="cc-github btn btn-link ml-auto" href="https://github.com/PBarri/GPE" target="_blank" rel="tooltip" title="Mira el código en Github">
+                            <a class="cc-github btn btn-link ml-auto github-code" href="https://github.com/PBarri/GPE" target="_blank" rel="tooltip" title="Check the code at Github">
                               <i class="fa fa-github fa-2x " aria-hidden="true"></i>
                             </a>
                           </div>
@@ -493,7 +493,7 @@
                         <div class="card">
                           <div class="card-header pb-0 pt-0 d-flex align-items-center">
                             <span> Club Deportivo</span>
-                            <a class="cc-github btn btn-link ml-auto" href="https://github.com/PBarri/ElGusanito" target="_blank" rel="tooltip" title="Mira el código en Github">
+                            <a class="cc-github btn btn-link ml-auto github-code" href="https://github.com/PBarri/ElGusanito" target="_blank" rel="tooltip" title="Check the code at Github">
                               <i class="fa fa-github fa-2x " aria-hidden="true"></i>
                             </a>
                           </div>
@@ -523,7 +523,7 @@
                         <div class="card">
                           <div class="card-header pb-0 pt-0 d-flex align-items-center">
                             <span> Bet-Me</span>
-                            <a class="cc-github btn btn-link ml-auto" href="https://github.com/PBarri/BetMe" target="_blank" rel="tooltip" title="Mira el código en Github">
+                            <a class="cc-github btn btn-link ml-auto github-code" href="https://github.com/PBarri/BetMe" target="_blank" rel="tooltip" title="Check the code at Github">
                               <i class="fa fa-github fa-2x " aria-hidden="true"></i>
                             </a>
                           </div>
@@ -558,7 +558,7 @@
                         <div class="card">
                           <div class="card-header pb-0 pt-0 d-flex align-items-center">
                             <span>Filtro Anti-SPAM</span>
-                            <a class="cc-github btn btn-link ml-auto" href="https://github.com/PBarri/Filtro-Anti-Spam" target="_blank" rel="tooltip" title="Mira el código en Github">
+                            <a class="cc-github btn btn-link ml-auto github-code" href="https://github.com/PBarri/Filtro-Anti-Spam" target="_blank" rel="tooltip" title="Check the code at Github">
                               <i class="fa fa-github fa-2x " aria-hidden="true"></i>
                             </a>
                           </div>
@@ -659,7 +659,7 @@
                   <div class="h5">AWS CSA Associate</div>
                   <p class="category">A Cloud Guru</p>
                   <p data-i18n="aws_desc1"></p>
-                  <p data-i18n="aws_desc2"></p>
+                  <p><span data-i18n="aws_desc2"></span><a href='https://acloud.guru/learn/aws-certified-solutions-architect-associate' target='_blank' data-i18n="here">here.</a></p>
                 </div>
               </div>
             </div>
@@ -763,8 +763,20 @@
           e.preventDefault();
           $(this).parent().parent().children().removeClass("active");
           $(this).parent().addClass("active");
-          $.i18n().locale = $(this).data('locale');
+          var locale = $(this).data('locale');
+          $.i18n().locale = locale;
+          /* Enable if allow to download CV!
+          var downloadCvHref = "cv/Pablo_Barrientos_" + locale + ".pdf";
+          $('#download-cv').attr("href", downloadCvHref);
+          */
           $('html').i18n();
+          // Localize tooltips
+          $('.fa-linkedin').parent().attr('data-original-title', $.i18n('tooltip_linkedin'));
+          $('.github-user').attr('data-original-title', $.i18n('tooltip_github'));
+          $('.github-code').attr('data-original-title', $.i18n('tooltip_github_code'));
+          $('#security-project-anchor').attr('data-original-title', $.i18n('tooltip_security'));
+          $('#webapps-anchor').attr('data-original-title', $.i18n('tooltip_webapp'));
+          $('#desktop-apps-anchor').attr('data-original-title', $.i18n('tooltip_desktop'));
         });
         $('html').i18n();
       });

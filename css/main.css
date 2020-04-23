@@ -2829,14 +2829,6 @@ small {
   font-size: 60%;
 }
 
-a {
-  color: #378C3F;
-}
-
-a:hover, a:focus {
-  color: #378C3F;
-}
-
 h1, .h1 {
   font-size: 3.5em;
   line-height: 1.15;
