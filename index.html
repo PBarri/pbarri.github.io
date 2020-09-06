@@ -103,7 +103,7 @@
                 <div class="h4 mt-0 title"><span data-i18n="basic_information">Basic Information</span></div>
                 <div class="row">
                   <div class="col-sm-4"><strong class="text-uppercase" data-i18n="age">Age:</strong></div>
-                  <div class="col-sm-8">30</div>
+                  <div class="col-sm-8"><span id="age">30</span></div>
                 </div>
                 <div class="row mt-3">
                   <div class="col-sm-4"><strong class="text-uppercase" data-i18n="languages">Languages:</strong></div>
@@ -289,7 +289,26 @@
           <div class="row">
             <div class="col-md-3 bg-blue" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
               <div class="card-body cc-experience-header">
-                <p data-i18n="atos_work_time">May 2018 - Present</p>
+                <p data-i18n="euigs_work_time">August 2020 - Present</p>
+                <div class="h5">EUIGS</div>
+                <img src="images/euigs.png" class="img-fluid d-none d-md-block" alt="">
+              </div>
+            </div>
+            <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body">
+                <div class="h5"><span data-i18n="devsecops">DevSecOps</span></div>
+                <!--<p data-i18n="euigs_work_desc_1"></p>-->
+                <div class="h6"><span data-i18n="used_technologies">Used technologies</span></div>
+                <p>AWS</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-4">
+          <div class="row">
+            <div class="col-md-3 bg-blue" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+              <div class="card-body cc-experience-header">
+                <p data-i18n="atos_work_time">May 2018 - August 2020</p>
                 <div class="h5">Atos IT</div>
                 <img src="images/atos.png" class="img-fluid d-none d-md-block" alt="">
               </div>
@@ -671,6 +690,42 @@
             <div class="row">
               <div class="col-md-3 bg-blue" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body cc-education-header">
+                  <p>43 <span data-i18n="hours">hours</span></p>
+                  <div class="h5" data-i18n="online_course"></div>
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5">Security - Specialty Certification preparation for AWS</div>
+                  <p class="category">Cloud Academy</p>
+                  <p><span data-i18n="course_content"></span><a href='https://cloudacademy.com/learning-paths/security-specialty-certification-preparation-for-aws-201/' target='_blank' data-i18n="here">here.</a></p>
+                  <p><span data-i18n="certification_download"></span><a href='documents/ca-aws-security.pdf' target='_blank' data-i18n="here">here.</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="row">
+              <div class="col-md-3 bg-blue" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body cc-education-header">
+                  <p>2 <span data-i18n="days">days</span></p>
+                  <div class="h5" data-i18n="presential_course"></div>
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5">AWS Professional Services: Security Best Practices</div>
+                  <p class="category">AWS Training and Certification</p>
+                  <p data-i18n="aws_sec_desc1"></p>
+                  <p><span data-i18n="certification_download"></span><a href='documents/aws-security-classroom.pdf' target='_blank' data-i18n="here">here.</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="row">
+              <div class="col-md-3 bg-blue" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body cc-education-header">
                   <p>13 <span data-i18n="hours">hours</span></p>
                   <div class="h5" data-i18n="online_course"></div>
                 </div>
@@ -695,10 +750,11 @@
               </div>
               <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
                 <div class="card-body">
-                  <div class="h5">AWS CSA Associate</div>
+                  <div class="h5">AWS CSA Associate 2020</div>
                   <p class="category">A Cloud Guru</p>
                   <p data-i18n="aws_desc1"></p>
-                  <p><span data-i18n="aws_desc2"></span><a href='https://acloud.guru/learn/aws-certified-solutions-architect-associate' target='_blank' data-i18n="here">here.</a></p>
+                  <p><span data-i18n="course_content"></span><a href='https://acloud.guru/learn/aws-certified-solutions-architect-associate' target='_blank' data-i18n="here">here.</a></p>
+                  <p><span data-i18n="certification_download"></span><a href='documents/acg-csa.pdf' target='_blank' data-i18n="here">here.</a></p>
                 </div>
               </div>
             </div>
@@ -716,6 +772,7 @@
                   <div class="h5" data-i18n="scrum_course"></div>
                   <p class="category">Tetralog Systems S.L.</p>
                   <p data-i18n="scrum_course_desc"></p>
+                  <p><span data-i18n="certification_download"></span><a href='documents/scrum.pdf' target='_blank' data-i18n="here">here.</a></p>
                 </div>
               </div>
             </div>
@@ -786,6 +843,8 @@
   <script type="text/javascript">
     includeHTML();
     $(function() {
+      var currentYear = new Date().getFullYear();
+      $("#age").text(currentYear - 1989);
       $(".flip-card").click(function() {
         $(this).toggleClass("flip-hover");
       });
