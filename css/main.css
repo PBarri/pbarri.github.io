@@ -7475,3 +7475,89 @@ iframe[name="acclaim-badge"] {
   -webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
 }
+
+.cert-badge {
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  height: 240px;
+}
+
+.cert-badge-body {
+  text-align: center;
+  padding: 22px 0 0;
+}
+
+.cert-badge-body a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-align: center;
+  line-height: inherit;
+}
+
+.cert-badge-body img {
+  width: 105px;
+  height: 105px;
+  margin: 0 0 22px;
+  text-align: center;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.cert-badge-name {
+  color: #333;
+  display: block;
+  font-size: 1rem;
+  line-height: 1.1em;
+  margin: 0 8px 8px;
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+  text-align: center;
+}
+
+.cert-badge-issuer {
+  color: #666;
+  font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: .81rem;
+  font-style: italic;
+  line-height: 1.1em;
+  margin: 0 8px;
+  max-width: 100%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.cert-badge-provided {
+  background: #f0f0f0;
+  border-top: 1px solid #e2e2e2;
+  color: #b6b6b6;
+  font-size: .44rem;
+  line-height: 28px;
+  margin: 18px 0 0;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: baseline;
+}
+
+.cert-badge-provided a {
+  color: #b6b6b6;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.cert-badge-provided span {
+  display: inline-block;
+  height: 28px;
+}
