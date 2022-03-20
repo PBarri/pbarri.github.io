@@ -39,7 +39,7 @@
           </div>
           <div class="navbar-translate flex-fill">
             <a class="navbar-brand" href="#">
-              <img src="images/perfil.jpg" width="30" height="30" class="d-inline-block align-top rounded-circle" alt=""> Pablo Barrientos </a>
+              <img src="images/Pablo_BL.jpg" width="30" height="30" class="d-inline-block align-top rounded-circle" alt=""> Pablo Barrientos </a>
             <button class="navbar-toggler navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation"><span
                 class="navbar-toggler-bar bar1"></span><span class="navbar-toggler-bar bar2"></span><span class="navbar-toggler-bar bar3"></span></button>
           </div>
@@ -64,7 +64,7 @@
         <div class="container">
           <div class="content-center">
             <div class="cc-profile-image">
-              <a href="#"><img src="images/perfil.jpg" alt="Image" /></a>
+              <a href="#"><img src="images/Pablo_BL.jpg" alt="Image" /></a>
             </div>
             <div class="h2 title">Pablo Barrientos</div>
             <p class="category text-white" data-i18n="cv_title">Ingeniero en Informática, Máster en Ciberseguridad</p>
@@ -164,6 +164,30 @@
             </div>
           </div>
           <div class="card">
+            <div class="card-header" id="collapse-cloud-heading">
+              <h3 class="mb-0">
+                <button class="btn btn-link btn-accordion" type="button" data-toggle="collapse" data-target="#collapse-cloud" aria-expanded="false" aria-controls="collapse-cloud" data-i18n="cloud"> Cloud </button>
+              </h3>
+            </div>
+            <div id="collapse-cloud" class="collapse" aria-labelledby="collapse-cloud-heading" data-parent="#skills-accordion">
+              <div class="card-body">
+                <div include-html="fragments/skills-cloud.html"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="collapse-automation-heading">
+              <h3 class="mb-0">
+                <button class="btn btn-link btn-accordion" type="button" data-toggle="collapse" data-target="#collapse-automation" aria-expanded="false" aria-controls="collapse-automation" data-i18n="automation"> Automation </button>
+              </h3>
+            </div>
+            <div id="collapse-automation" class="collapse" aria-labelledby="collapse-automation-heading" data-parent="#skills-accordion">
+              <div class="card-body">
+                <div include-html="fragments/skills-automation.html"></div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
             <div class="card-header" id="collapse-pl-heading">
               <h3 class="mb-0">
                 <button class="btn btn-link btn-accordion" type="button" data-toggle="collapse" data-target="#collapse-pl" aria-expanded="false" aria-controls="collapse-pl" data-i18n="pl"> Programming Languages </button>
@@ -200,30 +224,6 @@
             </div>
           </div>
           <div class="card">
-            <div class="card-header" id="collapse-cloud-heading">
-              <h3 class="mb-0">
-                <button class="btn btn-link btn-accordion" type="button" data-toggle="collapse" data-target="#collapse-cloud" aria-expanded="false" aria-controls="collapse-cloud" data-i18n="cloud"> Cloud </button>
-              </h3>
-            </div>
-            <div id="collapse-cloud" class="collapse" aria-labelledby="collapse-cloud-heading" data-parent="#skills-accordion">
-              <div class="card-body">
-                <div include-html="fragments/skills-cloud.html"></div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header" id="collapse-automation-heading">
-              <h3 class="mb-0">
-                <button class="btn btn-link btn-accordion" type="button" data-toggle="collapse" data-target="#collapse-automation" aria-expanded="false" aria-controls="collapse-automation" data-i18n="automation"> Automation </button>
-              </h3>
-            </div>
-            <div id="collapse-automation" class="collapse" aria-labelledby="collapse-automation-heading" data-parent="#skills-accordion">
-              <div class="card-body">
-                <div include-html="fragments/skills-automation.html"></div>
-              </div>
-            </div>
-          </div>
-          <div class="card">
             <div class="card-header" id="collapse-bd-heading">
               <h3 class="mb-0">
                 <button class="btn btn-link btn-accordion" type="button" data-toggle="collapse" data-target="#collapse-bd" aria-expanded="false" aria-controls="collapse-bd" data-i18n="database"> Databases </button>
@@ -255,6 +255,12 @@
                 <a class="nav-link active" id="skill-security-tab" data-toggle="tab" href="#skill-security" role="tab" aria-controls="skill-security" aria-selected="true" data-i18n="security">Security</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" id="skill-cloud-tab" data-toggle="tab" href="#skill-cloud" role="tab" aria-controls="skill-cloud" aria-selected="false" data-i18n="cloud">Cloud</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="skill-automation-tab" data-toggle="tab" href="#skill-automation" role="tab" aria-controls="skill-automation" aria-selected="false" data-i18n="automation">Automation</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" id="skill-pl-tab" data-toggle="tab" href="#skill-pl" role="tab" aria-controls="skill-pl" aria-selected="false" data-i18n="pl">Programming Languages</a>
               </li>
               <li class="nav-item">
@@ -262,12 +268,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="skill-frontend-tab" data-toggle="tab" href="#skill-frontend" role="tab" aria-controls="skill-frontend" aria-selected="false" data-i18n="frontend">Front-end</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="skill-cloud-tab" data-toggle="tab" href="#skill-cloud" role="tab" aria-controls="skill-cloud" aria-selected="false" data-i18n="cloud">Cloud</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" id="skill-automation-tab" data-toggle="tab" href="#skill-automation" role="tab" aria-controls="skill-automation" aria-selected="false" data-i18n="automation">Automation</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" id="skill-db-tab" data-toggle="tab" href="#skill-db" role="tab" aria-controls="skill-db" aria-selected="false" data-i18n="database">Databases</a>
@@ -282,6 +282,12 @@
               <div class="tab-pane fade show active" id="skill-security" role="tabpanel" aria-labelledby="skill-security-tab">
                 <div include-html="fragments/skills-security.html"></div>
               </div>
+              <div class="tab-pane fade" id="skill-cloud" role="tabpanel" aria-labelledby="skill-cloud-tab">
+                <div include-html="fragments/skills-cloud.html"></div>
+              </div>
+              <div class="tab-pane fade" id="skill-automation" role="tabpanel" aria-labelledby="skill-automation-tab">
+                <div include-html="fragments/skills-automation.html"></div>
+              </div>
               <div class="tab-pane fade" id="skill-pl" role="tabpanel" aria-labelledby="skill-pl-tab">
                 <div include-html="fragments/skills-pl.html"></div>
               </div>
@@ -290,12 +296,6 @@
               </div>
               <div class="tab-pane fade" id="skill-frontend" role="tabpanel" aria-labelledby="skill-frontend-tab">
                 <div include-html="fragments/skills-frontend.html"></div>
-              </div>
-              <div class="tab-pane fade" id="skill-cloud" role="tabpanel" aria-labelledby="skill-cloud-tab">
-                <div include-html="fragments/skills-cloud.html"></div>
-              </div>
-              <div class="tab-pane fade" id="skill-automation" role="tabpanel" aria-labelledby="skill-automation-tab">
-                <div include-html="fragments/skills-automation.html"></div>
               </div>
               <div class="tab-pane fade" id="skill-db" role="tabpanel" aria-labelledby="skill-db-tab">
                 <div include-html="fragments/skills-bd.html"></div>
@@ -321,9 +321,16 @@
             <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
               <div class="card-body">
                 <div class="h5"><span data-i18n="devsecops">Security DevOps</span></div>
-                <!--<p data-i18n="euigs_work_desc_1"></p>-->
+                <p data-i18n="euigs_work_desc_1"></p>
+                <p data-i18n="euigs_work_desc_2"></p>
+                <p data-i18n="euigs_work_desc_3"></p>
+                <p data-i18n="euigs_work_desc_4"></p>
+                <p data-i18n="euigs_work_desc_5"></p>
+                <p data-i18n="euigs_work_desc_6"></p>
+                <p data-i18n="euigs_work_desc_7"></p>
+                <p data-i18n="euigs_work_desc_8"></p>
                 <div class="h6"><span data-i18n="used_technologies">Used technologies</span></div>
-                <p>AWS, Jenkins, SonarQube, Dome9, STRIDE</p>
+                <p>AWS, IAM Governance, PAM, Dome9, CyberArk, Python, Spring Boot, Spring Cloud, Git, Docker, Jira, OWASP ZAP, Jenkins, Sonarqube, Nexus, Nginx, Apache, Threat Modeling, Threagile, Hashicorp Vault</p>
               </div>
             </div>
           </div>
@@ -710,6 +717,25 @@
       <div class="section">
         <div class="cc-education">
           <div class="h4 text-center mb-4 title"><span data-i18n="education_other">Other education</span></div>
+          
+          <div class="card mb-4">
+            <div class="row">
+              <div class="col-md-3 bg-blue" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body cc-education-header">
+                  <p>20 <span data-i18n="hours">hours</span></p>
+                  <div class="h5" data-i18n="online_course"></div>
+                </div>
+              </div>
+              <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+                <div class="card-body">
+                  <div class="h5">CCSP Certification Training </div>
+                  <p class="category">A Cloud Guru</p>
+                  <p><span data-i18n="certification_download"></span><a href='documents/acg-ccsp.pdf' target='_blank' data-i18n="here">here.</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
           <div class="card mb-4">
             <div class="row">
               <div class="col-md-3 bg-blue" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
