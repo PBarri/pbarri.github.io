@@ -103,7 +103,7 @@
                 <div class="h4 mt-0 title"><span data-i18n="basic_information">Basic Information</span></div>
                 <div class="row">
                   <div class="col-sm-4"><strong class="text-uppercase" data-i18n="age">Age:</strong></div>
-                  <div class="col-sm-8"><span id="age">30</span></div>
+                  <div class="col-sm-8"><span id="age"></span></div>
                 </div>
                 <div class="row mt-3">
                   <div class="col-sm-4"><strong class="text-uppercase" data-i18n="languages">Languages:</strong></div>
@@ -893,8 +893,16 @@
   <script type="text/javascript">
     includeHTML();
     $(function() {
-      var currentYear = new Date().getFullYear();
-      $("#age").text(currentYear - 1989);
+      var today = new Date();
+      var currentYear = today.getFullYear();
+      var birthdayDate = new Date(currentYear, 6, 21); // 21-07-xxxx
+      var age = currentYear - 1989;
+
+      if (birthdayDate - today > 0) {
+        age--;
+      }
+
+      $("#age").text(age);
       $(".flip-card").click(function() {
         $(this).toggleClass("flip-hover");
       });
